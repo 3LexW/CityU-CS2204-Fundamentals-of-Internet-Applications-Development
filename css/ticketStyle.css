@@ -1,0 +1,43 @@
+a[href="./ticket.html"] {
+  pointer-events: none;
+  cursor: default;
+  color: black;
+}
+
+#movieInformation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#movieInformation > h3 {
+  flex-basis: 50%;
+}
+
+table {
+  width: 50%;
+  margin: 15px 0px 15px 0px;
+}
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+.selected {
+  background: #f17ab2;
+}
+
+tr:not(:first-child) > td:not(:first-child):not(.selected):hover {
+  background: #42f5e3;
+}
+
+input {
+  width: 15%;
+  height: 30px;
+}
+
+#seatBooked {
+  border: 1px dotted black;
+  margin: 15px 0px 15px 0px;
+  width: 45%;
+  padding: 10px 10px 10px 10px;
+}

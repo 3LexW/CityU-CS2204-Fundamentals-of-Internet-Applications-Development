@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Now Showing - CinemaHK</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/nowShowingStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+      a[href="./nowShowing.html"]{
+        pointer-events :none;
+        cursor: default;
+        color: black; 
+      }
+    </style>
+    <script type="text/javascript" src="../scripts/movies.js"></script>
+    <script type="text/javascript" src= "http://courses.cs.cityu.edu.hk/cs2204/cw3/cinemas.js"></script>
+    <script type="text/javascript" src= "../scripts/nowShowing-movieList.js"></script>
+  </head>
+  <body onload = createMovieList()>
+    <div id="webpage">
+      <header>
+        <img src="../images/filmreel.png" alt="CinemaHK - Logo" />
+        <h1>CinemaHK</h1>
+      </header>
+      <div id="nav">
+        <ul>
+          <li><a href="./home.html">HOME</a></li>
+          <li><a href="./nowShowing.html">NOW SHOWING</a></li>
+          <li><a href="./ticket.html">TICKET</a></li>
+        </ul>
+      </div>
+      <!-- f) Selection box for user to choose a cinema -->
+      <!-- g) A list of movies on show now at the selected cinema, with button that pass the moviename and numeic value representign the time / date / house -->
+      <div id="userForm">
+        <div id="cinemaSelection">
+          <h2>Select Cinema: </h2>
+          <select name="cinemaToVisit" id="cinemaToVisit" onchange = createMovieList()>
+          </select>
+          <script type="text/javascript" src= "../scripts/nowShowing-cinemaList.js"></script>
+        </div>
+        <div id="movieSelect">
+        </div>
+      </div>
+      <!-- h) Information of cinema locations -->
+      <div id="cinemaInfo">
+        <h2>Cinema Locations</h2>
+        <div class = "cinemaDetail" id="cinema1">
+          <h3>Festival Grand Cinema</h3>
+          <img src="../images/map_KLT.jpg" alt="Map to Festival Grand Cinema" />
+        </div>
+        <div class = "cinemaDetail"id="cinema2">
+          <h3>UA iSQUARE</h3>
+          <img src="../images/map_TST.jpg" alt="Map to UA iSQUARE" />
+        </div>
+        <div class = "cinemaDetail"id="cinema3">
+          <h3>Metroplex</h3>
+          <img src="../images/map_KLB.jpg" alt="Map to The Metroplex" />
+        </div>
+      </div>
+      <footer>
+        <p>
+          @Copyright of resources belong to corresponding copyright owners -
+          fair use for education purpose
+        </p>
+        <a href="./home.html">Home</a>
+        <a href="./design.html">Design</a>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design - CinemaHK</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style>
+      .webpage{
+        width: 400px;
+        border: 2px solid black;
+      }
+      .webpage > div{
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+        border: 1px dotted black;
+      }
+      .nav{
+        margin-left: 300px !important;
+      }
+    </style>
+  </head>
+
+  
+  <body>
+    <div id="webpage">
+      <div id = "CW2">
+        <div id = "Sketch Diagram">
+          <h2>Sketch Diagram: </h2> 
+          <div class = "webpage">
+            <div class = "header">Header</div>
+            <div class = "nav"> Menu (Fixed) </div>
+            <div class = "Content">Content</div>
+            <div class = "footer">Footer</div>
+          </div>
+        </div>
+        <div id = "StyleSheet">
+          <h2>Style Sheets Explanation: </h2>
+          <ol>
+            <li>style.css - Embedded Style</li>
+              <ol>
+                <li>#webpage: Set the font for the entire website</li>
+                <li>@keyframes logoShift: Animation of shifting the logo from right to it's final position</li>
+                <li>img[alt="CinemaHK - Logo"]: Applied the animation logoShift</li>
+                <li>header: The style of the header for all pages</li>
+                <li>header > h1: Shift to the right for the logo's space</li>
+                <li>#nav: Set a fixed position to the right of the container, with some transparent to reveal data behind it</li>
+                <li>#nav > ul: Remove the bullet points</li>
+                <li>footer: The style of the footer for all pages</li>
+                <li>footer > *: Spacing between element in the footer</li>
+                <li>a:hover: Visual guidence of using is hoveing a link</li>
+              </ol>
+            <li>homeStyle.css</li>
+              <ol>
+                <li>a[href="./home.html"]: Disable clicking the home page again</li>
+                <li>#movieList: Using flex display to create a dynamic view of the webpage</li>
+                <li>#movieList > div: Padding between elements, and 50% width for two movie lists (Showing and Up coming)
+                </li>
+                <li>.movie: For each movie, create a border, and apply flex display to adapt difference container size</li>
+                <li>.movie > img: Uniform the size of the movie poster</li>
+                <li>.movieName, .cast, .director, .duration: Create spaces between the information of the movie for better visual experience</li>
+                <li>img[alt *= "thumbnail"]: Make all the movie thumbnails clickable</li>
+              </ol>
+            <li>nowShowing.css</li>
+              <ol>
+                <li>a[href="./nowShowing.html"]: Disable link</li>
+                <li>#cinemaSelection: Apply flex display to fit the heading and select box on the same row</li>
+                <li>#cinemaSelection > select: Spacing between two elements on the same line</li>
+                <li>#movieSelect: Using flex display to prevent a container which has an extreme small size
+                </li>
+                <li>#movieSelect > h2: Fill the instruction to the entire row under the parent's flex display mode</li>
+                <li>.movie: Set border and the width for each movie, align all items to the center</li>
+                <li>.movie > img: Set the size of the poster, and center them to the center of the div</li>
+                <li>.movieName: Set the alignment of the element to the center of the div</li>
+                <li>.movie > form: Set the alignment of the element to the center of the div</li>
+                <li>#cinamaInfor: Create spacing with the previous block, and set to flex mode to adapt different container sizes</li>
+                <li>#cinemaInfor > h2: Fil lthe instruction to the entire row under the parent's flex display mode</li>
+                <li>.cinemaDetail: Change the width of the div so that there will be at most three items on a row</li>
+                <li>.cinemaDetail: Create some spacing between the element and the border of the div</li>
+              </ol>
+            <li>ticketStyle.css</li>
+              <ol>
+                <li>a[href="./ticket.html"]: Disable the click of the link</li>
+                <li>#movieInformation: Aligned the header and the information into two rows by using flex display</li>
+                <li>#movieInfomration > h3: Set the field name's width on the webpage</li>
+                <li>table: Set the width, and spacing with other elements</li>
+                <li>td: Set cell borders, and align the text</li>
+                <li>tr:hover : Exclude rows which are not suppose to be selected, and apply background color when the mouse pointer hovers on the cell</li>
+                <li>input: Style of the input button for better visualization</li>
+              </ol>
+            <li>printStyle.css</li>
+              <ol>
+                <li>.ticket: Use flex display to set two items on each row, also, performed printing style adjustment</li>
+                <li>.tecket p: Set the p tags to 50%, such that a new field must start a enw row</li>
+              </ol>
+            <li>printDisplay.css</li>
+              <ol>
+                <li>@media print: Imported as print style sheet, and display nonthing for the selected class, therefore some class names are appended in the HTML file "print.html"</li>
+              </ol>
+          </ol>
+        </div>
+      </div> 
+      <div id = "Reference">
+        <h2>Reference: </h2>
+        <p> This website is built by using images and data from the following websites: </p>
+        <ul>
+          <li><a href="https://hkmovie6.com/movie/7fc9fafd-2362-417c-9e2f-e67cf44ac02a">hkmovie6 - The War with Grandpa</a></li>
+          <li><a href="https://hkmovie6.com/movie/71380795-f610-4ca8-98b8-8a7daffd4a3e">hkmovie6 - Not Quite Dead Yet</a></li>
+          <li><a href="https://hkmovie6.com/movie/455f8e43-3bc5-4735-90e7-d39966c680ad">hkmovie6 - The Confidence Man JP – Episode of the Princess –</a></li>
+          <li><a href="https://hkmovie6.com/movie/a0e953f6-4cab-4687-b0e9-dc1682773d56">hkmovie6 - Black Widow</a></li>
+          <li><a href="https://hkmovie6.com/movie/fb874e20-26af-41a9-a71c-ca55575de71a">hkmovie6 - Free Guy</a></li>
+          <li><a href="https://hkmovie6.com/movie/8311257f-b7fe-4e25-8570-659a480f192d">hkmovie6 - Fast & Furious 9</a></li>
+          <li><a href="https://stackoverflow.com/questions/12289853/notfirst-child-selector">Stack Overflow - not:first-child selector</a></li>
+          <li><a href="https://stackoverflow.com/questions/4895325/im-trying-to-use-a-print-css-to-print-one-div-per-page-and-im-failing">Stack Overflow - I'm trying to use a print.css to print one div per page, and I'm failing</a></li>
+          <li><a href="https://stackoverflow.com/questions/355313/how-do-i-hide-an-element-when-printing-a-web-page">Stack Overflow - How do I hide an element when printing a web page?
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

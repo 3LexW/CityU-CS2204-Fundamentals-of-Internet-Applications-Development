@@ -1,0 +1,47 @@
+a[href="./home.html"] {
+  pointer-events: none;
+  cursor: default;
+  color: black;
+}
+
+#movieList {
+  display: flex;
+}
+
+#movieList > div {
+  padding: 5px;
+  width: 50%;
+}
+
+.movie {
+  border: 1px;
+  border-style: solid;
+  position: relative;
+  display: flex;
+}
+
+.movie > img {
+  height: 200px;
+  width: 142px;
+  padding-right: 10px;
+}
+
+.movieName,
+.cast,
+.director,
+.duration {
+  font-weight: bold;
+  display: flex;
+  margin: 5px 0px 5px 0px;
+}
+
+img[alt*="thumbnail"] {
+  cursor: pointer;
+}
+
+video {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  height: 500px;
+}

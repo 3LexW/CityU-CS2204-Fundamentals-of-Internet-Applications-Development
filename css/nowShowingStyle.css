@@ -1,0 +1,70 @@
+a[href="./nowShowing.html"] {
+  pointer-events: none;
+  cursor: default;
+  color: black;
+}
+
+#cinemaSelection {
+  display: flex;
+}
+
+#cinemaSelection > select {
+  margin-left: 10px;
+  height: 30px;
+  align-self: center;
+}
+
+#movieSelect {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#movieSelect > h2 {
+  flex: 100%;
+}
+
+.movie {
+  border: 1px;
+  border-style: dotted;
+  border-radius: 20px;
+  width: 33%;
+  align-items: center;
+}
+
+.movie > img {
+  height: 200px;
+  width: 142px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.movieName {
+  text-align: center;
+}
+
+.movie > form {
+  text-align: center;
+}
+
+#cinemaInfo {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cinemaInfo > h2 {
+  flex: 100%;
+}
+
+.cinemaDetail {
+  border: 1px;
+  border-style: dotted;
+  width: 33%;
+}
+
+.cinemaDetail > * {
+  width: calc(100% - 20px);
+  padding: 5px 10px 5px 10px;
+}

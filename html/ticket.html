@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Now Showing - CinemaHK</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/ticketStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script type="text/javascript" src= "http://courses.cs.cityu.edu.hk/cs2204/cw3/cinemas.js"></script>
+    <script type="text/javascript" src= "../scripts/ticket-init.js"></script>
+  </head>
+  <body onload = ticketInit()>
+    <div id="webpage">
+      <header>
+        <img src="../images/filmreel.png" alt="CinemaHK - Logo" />
+        <h1>CinemaHK</h1>
+      </header>
+      <div id="nav">
+        <ul>
+          <li><a href="./home.html">HOME</a></li>
+          <li><a href="./nowShowing.html">NOW SHOWING</a></li>
+          <li><a href="./ticket.html">TICKET</a></li>
+        </ul>
+      </div>
+      <div id="movieInformation">
+        <h3>Cinema Name:</h3>
+        <input id= "branchName" type="text" value="" readonly />
+        <h3>Movie Name:</h3>
+        <input id= "movieName" type="text" value="" readonly />
+        <h3>Date and Time:</h3>
+        <input id= "dateAndTime" type="text" value="" readonly />
+        <h3>House Number:</h3>
+        <input id= "house" type="text" value="" readonly />
+      </div>
+      <div id="seatPlan">
+        <table>
+          <tr>
+            <td>Row</td>
+            <td colspan="6">SCREEN</td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+        </table>
+        <div id="seatBooked">
+          <h3>Seat(s) booked:</h3>
+          <form action="./print.html" target="_blank">
+            <input type="submit" value="Confirm" onclick="buildSessionStorage()"/>
+            <script type="text/javascript" src= "../scripts/ticket-buildStorage.js"></script>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <p>
+          @Copyright of resources belong to corresponding copyright owners -
+          fair use for education purpose
+        </p>
+        <a href="./home.html">Home</a>
+        <a href="./design.html">Design</a>
+      </footer>
+    </div>
+  </body>
+</html>

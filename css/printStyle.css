@@ -1,0 +1,12 @@
+.ticket {
+  border: 1px solid;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0px 20px 0px;
+  page-break-after: always;
+}
+
+.ticket p {
+  flex: 0 1 50%;
+}

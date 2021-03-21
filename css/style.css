@@ -1,0 +1,73 @@
+#webpage {
+  font-family: roboto, helvetica;
+}
+
+@keyframes logoShift {
+  from {
+    left: calc(100% - 130px);
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+img[alt="CinemaHK - Logo"] {
+  animation-name: logoShift;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  position: absolute;
+}
+
+header {
+  border: 1px;
+  border-color: black;
+  border-style: dotted;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+header > h1 {
+  margin-left: 130px;
+}
+
+#nav {
+  border: 1px;
+  border-radius: 20px;
+  border-style: dotted;
+  width: 200px;
+  position: fixed;
+  right: 0;
+  background: rgb(226, 240, 240);
+  opacity: 0.8;
+  z-index: 99;
+}
+
+#nav > ul {
+  list-style-type: none;
+}
+
+footer {
+  border: 1px;
+  border-radius: 20px;
+  border-color: black;
+  border-style: dotted;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+footer > * {
+  padding: 2px;
+}
+
+a:hover {
+  color: blue;
+}
